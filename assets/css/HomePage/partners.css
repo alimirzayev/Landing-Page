@@ -1,0 +1,52 @@
+/** Partners Section Starts **/
+
+.partners-section {
+    max-width: 1920px;
+    margin: 0 auto;
+    margin-bottom: 145px;
+}
+
+.partners-section-heading {
+    text-align: center;
+    margin-bottom: 42px;
+}
+
+.partners-section-heading p {
+    font-family: 'Radion B Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: -0.01em;
+    color: #292C35;
+}
+
+.partners-container {
+    padding: 0 158px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.partners-card {
+    width: 150px;
+}
+
+.partners-card img {
+    width: 100%;
+}
+
+/** Partners Section End **/
+
+@media screen and (min-width:320px) and (max-width:768px) {
+    .partners-container {
+        padding: 0 10px;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .parnters-card{
+        margin-bottom: 20px;
+    }
+}

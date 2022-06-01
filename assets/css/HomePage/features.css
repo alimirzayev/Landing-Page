@@ -1,0 +1,176 @@
+/** Features Starts Here **/
+
+.features-section {
+    max-width: 1920px;
+    margin: 67px auto 79px auto;
+    padding: 0 48px 0 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.features-left-text {
+    white-space: pre-line;
+}
+
+.features-left-btn button,
+.product-starting-btn button,
+.footer-first form button {
+    text-align: center;
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    background: #FF7144;
+    border: 2px solid transparent;
+    border-radius: 27px;
+    transition: 0.3s;
+}
+
+.features-left-btn button:hover,
+.product-starting-btn button:hover,
+.footer-first form button:hover{
+    background: transparent;
+    border: 2px solid #FF7144;
+    color: #FF7144;
+}
+
+.features-right {
+    display: flex;
+    align-items: center;
+}
+
+.features-card {
+    width: 271px;
+    height: 271px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #FAFAFA;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.features-card:hover{
+    box-shadow: 0px 0px 30px 1px #fbb19aa9;
+}
+
+.features-card-img {
+    width: 138px;
+}
+
+.features-card-img img {
+    width: 100%;
+}
+
+.features-card:nth-child(2) {
+    margin: 0 3px;
+}
+
+.features-card-heading p {
+    margin: 14px 0 6px 0;
+    font-family: 'Radion B Book';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #292C35;
+}
+
+.features-card-text p {
+    padding: 0 65px 0 52px;
+    font-family: 'Radion B Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: -0.01em;
+    color: #292C35;
+    opacity: 0.7;
+}
+
+/** Features Ends Here **/
+
+@media screen and (min-width:320px) and (max-width:768px) {
+    .features-section {
+        flex-direction: column;
+    }
+
+    .features-right {
+        flex-direction: column;
+    }
+
+    .features-card:nth-child(2) {
+        margin: 20px 0;
+    }
+
+    .features-left {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    .features-left-text {
+        white-space: unset;
+        text-align: center;
+    }
+
+    .features-left-text h3{
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+
+    .features-section {
+        flex-direction: column;
+        margin: 47px auto 69px auto;
+    }
+
+    .features-left {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+
+    .features-card {
+        width: 241px;
+        height: 241px;
+    }
+}
+
+@media screen and (min-width:1024px) and (max-width:1199px) {
+
+    .features-section{
+        padding: 0 8px;
+    }
+
+    .features-left-text h3{
+        font-size: 25px;
+    }
+
+    .features-card{
+        width: 243px;
+        height: 243px;
+    }
+}
+
+@media screen and (min-width:1199px) and (max-width:1350px) {
+
+    .features-section{
+        padding: 0 20px 0 20px;
+    }
+
+    .features-card {
+        width: 249px;
+        height: 249px;
+    }
+}

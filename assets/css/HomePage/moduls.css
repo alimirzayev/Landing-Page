@@ -1,0 +1,129 @@
+/** Modulos Starts Here **/
+
+.modulos-section {
+    max-width: 1920px;
+    margin: 0 auto 81px auto;
+}
+
+.modules-section-heading h2 {
+    text-align: center;
+    margin-bottom: 34px;
+}
+
+.module-section-image {
+    position: relative;
+    padding: 0 47px 0 33px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.module-section-image img {
+    width: 100%;
+}
+
+.module-subtract {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modules-review {
+    position: absolute;
+    left: 58px;
+    bottom: 25px;
+
+    width: 281px;
+    height: 63px;
+    background: #FFFFFF;
+    border-radius: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.modules-review-first-line {
+    margin-top: 9px;
+}
+
+.modules-review-first-line,
+.modules-review-second-line {
+    display: flex;
+    align-items: center;
+}
+
+.modules-review-qty p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 26px;
+    color: #252525;
+}
+
+.modules-review-text p,
+.modules-review-point span,
+.modules-review-qty p span,
+.modules-trustpilot p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 26px;
+    color: #252525;
+}
+
+.modules-review-stars {
+    padding: 0 12px;
+}
+
+.modules-review-point p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 26px;
+    color: #252525;
+}
+
+.modules-review-star {
+    padding: 0 5px 0 9px;
+}
+
+/** Modulos Ends Here **/
+
+@media screen and (min-width:320px) and (max-width:768px) {
+    .modulos-section {
+        /* display: none; */
+    }
+
+    .modules-section-heading h2 {
+        font-size: 32px;
+    }
+
+    .module-section-image {
+        padding: 0 5px 0 5px;
+    }
+
+    .modules-review {
+        left: 10px;
+        bottom: 5px;
+        width: 250px;
+        height: 55px;
+    }
+
+    .module-section-image{
+        height: 45vh;
+    }
+
+    .module-section-image img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}

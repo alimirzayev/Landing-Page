@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+@font-face {
+    font-family: "Radion B Regular";
+    src: url('../fonts/RadionB-Regular.ttf');
+}
+
+@font-face {
+    font-family: "Radion B Book";
+    src: url('../fonts/RadionB-Book.otf');
+}
+
+@font-face {
+    font-family: "Radion B Light";
+    src: url('../fonts/RadionB-Light.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+/** width **/
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+/** Track **/
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/** Handle **/
+::-webkit-scrollbar-thumb {
+    background: #FF7144;
+}
+
+/** Handle on hover **/
+::-webkit-scrollbar-thumb:hover {
+    background: #182e3e;
+}
+
+h1 {
+    font-family: 'Radion B Light';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 80px;
+    line-height: 120%;
+}
+
+h2 {
+    font-family: 'Radion B Light';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 120%;
+}
+
+h3 {
+    font-family: 'Radion B Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 120%;
+}
+
+button {
+    font-family: 'Radion B Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.viewport{
+    display: none;
+}
+
+@media screen and (min-width:280px) and (max-width:1024px) {
+    .viewport{
+        display: block;
+    }
+}

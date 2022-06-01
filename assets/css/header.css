@@ -1,0 +1,338 @@
+/** Header Starts Here **/
+:root {
+    --splash-bg-color: #368887;
+}
+
+header {
+    max-width: 1920px;
+    margin: 0 auto;
+    height: 75px;
+    background: #FFFFFF;
+    backdrop-filter: blur(44px);
+    padding: 40px 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.desktop-header nav ul {
+    display: flex;
+    align-items: center;
+}
+
+.desktop-header nav ul li {
+    margin: 0 10px 0 0;
+    padding: 7px 20px;
+    cursor: pointer;
+    border-radius: 48px;
+    border: 2px solid transparent;
+    transition: 0.2s ease;
+}
+
+.desktop-header nav ul li:hover{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border: 2px solid #22425A;
+}
+
+.desktop-header nav ul li p {
+    font-family: 'Radion B Book';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #22425A;
+}
+
+.desktop-header nav ul .active-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #22425A;
+    border-radius: 48px;
+    padding: 7px 20px;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+    transition: 0.2s ease;
+}
+
+.desktop-header nav ul .active-page p {
+    color: #FFFFFF
+}
+
+.desktop-header nav ul .active-page:hover p{
+    color: #22425A !important;
+}
+
+.header-logo {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header-icons div {
+    cursor: pointer;
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+}
+
+.header-smiley-icon svg,
+.header-bag-icon svg{
+    transition: 0.4s;
+}
+
+.header-smiley-icon svg:hover{
+    transform: scale(1.05) rotate(360deg);
+}
+
+.header-bag-icon svg:hover{
+    transform: scale(1.05) rotate(25deg);
+}
+
+.header-bag-icon {
+    margin-left: 28px;
+}
+
+.nav__toggle {
+    display: inline-block;
+    position: absolute;
+    z-index: 10;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    outline: 0;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.15s linear;
+}
+
+.nav__menu {
+    z-index: 5;
+    visibility: hidden;
+    transform: translateY(90%);
+}
+
+.nav__item {
+    opacity: 0;
+    transition: all 0.3s cubic-bezier(0, 0.995, 0.99, 1) 0.3s;
+}
+
+.nav__item:nth-child(1) {
+    transform: translateY(-40px);
+}
+
+.nav__item:nth-child(2) {
+    transform: translateY(-80px);
+}
+
+.nav__item:nth-child(3) {
+    transform: translateY(-120px);
+}
+
+.nav__item:nth-child(4) {
+    transform: translateY(-160px);
+}
+
+.nav__item:nth-child(5) {
+    transform: translateY(-200px);
+}
+
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column !important;
+    margin: 0 auto;
+}
+
+.nav__link {
+    color: white;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1rem;
+    font-family: 'Radion B Book';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.menuicon {
+    display: block;
+    cursor: pointer;
+    color: white;
+    transform: rotate(0deg);
+    transition: 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.menuicon__bar,
+.menuicon__circle {
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 3;
+    stroke-linecap: round;
+}
+
+.menuicon__bar {
+    transform: rotate(0deg);
+    transform-origin: 50% 50%;
+    transition: transform 0.25s ease-in-out;
+}
+
+.menuicon__circle {
+    transition: stroke-dashoffset 0.3s linear 0.1s;
+    stroke-dashoffset: 144.513262038;
+    stroke-dasharray: 144.513262038;
+}
+
+.splash {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    width: 1px;
+    height: 1px;
+}
+
+.splash::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    background-color: var(--splash-bg-color);
+    width: 284vmax;
+    height: 284vmax;
+    top: -142vmax;
+    left: -142vmax;
+    transform: scale(0);
+    transform-origin: 50% 50%;
+    transition: transform 0.5s cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    will-change: transform;
+}
+
+.nav:target>.splash::after,
+.nav--open>.splash::after {
+    transform: scale(1);
+}
+
+.nav:target .menuicon,
+.nav--open .menuicon {
+    color: white;
+    transform: rotate(180deg);
+}
+
+.nav:target .menuicon__circle,
+.nav--open .menuicon__circle {
+    stroke-dashoffset: 0;
+}
+
+.nav:target .menuicon__bar:nth-child(1),
+.nav--open .menuicon__bar:nth-child(1),
+.nav:target .menuicon__bar:nth-child(4),
+.nav--open .menuicon__bar:nth-child(4) {
+    opacity: 0;
+}
+
+.nav:target .menuicon__bar:nth-child(2),
+.nav--open .menuicon__bar:nth-child(2) {
+    transform: rotate(45deg);
+}
+
+.nav:target .menuicon__bar:nth-child(3),
+.nav--open .menuicon__bar:nth-child(3) {
+    transform: rotate(-45deg);
+}
+
+.nav:target .nav__menu,
+.nav--open .nav__menu {
+    visibility: visible;
+}
+
+.nav:target .nav__item,
+.nav--open .nav__item {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.viewport {
+    width: 100%;
+    height: 65px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background-color: #368887;
+}
+
+.header-mobile-logo{
+    transform: translateY(-5px);
+}
+
+.header-mobile-logo{
+    width: 150px;
+}
+
+.header-mobile-logo svg{
+    width: 100%;
+}
+
+.header-mobile-logo svg path{
+    fill: white;
+}
+
+
+.height {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.none{
+    display: none;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #368887;
+}
+
+/** Header Ends Here **/
+
+/** Hamburger Menu Starts **/
+
+@media screen and (min-width:320px) and (max-width:768px) {
+
+    .desktop-header{
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .desktop-header{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width:1400px) {
+    .desktop-header nav ul li {
+        padding: 7px 10px;
+    }
+}

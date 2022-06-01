@@ -1,0 +1,234 @@
+/** Product Starts Here **/
+
+.product-section {
+    max-width: 1920px;
+    margin: 0 auto;
+    margin-bottom: 71px;
+}
+
+.product-section-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.product-section-heading h2 {
+    width: 62%;
+}
+
+.product-section-starting {
+    width: 100%;
+    padding: 0 24px;
+    margin-bottom: 38px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-starting-left {
+    display: flex;
+    align-items: center;
+}
+
+.product-starting-label {
+    margin-right: 19px;
+    font-family: 'Radion B Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: -0.01em;
+    color: #8F8F8F;
+}
+
+.product-starting-btn button {
+    margin-top: 0;
+}
+
+.product-section-container {
+    width: 100%;
+    padding: 0 25px;
+    display: flex;
+}
+
+.product-container-left,
+.product-container-right {
+    width: 55%;
+}
+
+.product-container-left {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-direction: row;
+}
+
+.product-left-card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 345px;
+    height: 345px;
+    margin: 3px;
+    background: #F3F3F3;
+    border-radius: 30px;
+}
+
+.product-left-card-img {
+    width: 55%;
+}
+
+.product-left-card-img img {
+    width: 100%;
+    transition: 0.3s;
+}
+
+.product-right-card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #F3F3F3;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-right-card-img {
+    width: 435px;
+}
+
+.product-right-card-img img {
+    width: 100%;
+    transition: 0.3s;
+}
+
+.product-left-card:hover .product-left-card-img img,
+.product-right-card:hover .product-right-card-img img{
+    transform: scale(1.10);
+}
+
+
+.product-tags-container {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    left: 24px;
+    bottom: 19px;
+}
+
+.product-first-tag,
+.product-second-tag {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 14px;
+    background: #FFFFFF;
+    border-radius: 35px;
+    font-family: 'Radion B Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.01em;
+}
+
+.product-first-tag {
+    color: #000000;
+}
+
+.product-second-tag {
+    opacity: 0.5;
+}
+
+/** Product Ends Here **/
+
+@media screen and (min-width:320px) and (max-width:768px) {
+
+    .product-container-left {
+        width: 100%;
+        isplay: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .product-container-right {
+        display: none;
+    }
+
+    .product-section-heading h2 {
+        width: 100%;
+        font-size: 25px;
+    }
+
+    .product-starting-btn button {
+        display: none;
+    }
+
+    .product-section-starting {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .product-section-container {
+        padding: 0 15px;
+    }
+
+    .product-tags-container {
+        left: 15px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .product-section-heading h2 {
+        width: 90%;
+    }
+
+    .product-container-left {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .product-container-right {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width:1024px) and (max-width:1200px) {
+
+    .product-first-tag,
+    .product-seconod-tag {
+        padding: 4px 8px;
+        font-size: 12px;
+    }
+
+    .product-left-card {
+        width: 230px;
+        height: 230px;
+    }
+
+}
+
+@media screen and (min-width:1200px) and (max-width:1314px) {
+    .product-left-card {
+        width: 280px;
+        height: 280px;
+    }
+}
+
+@media screen and (min-width:1314px) and (max-width:1454px) {
+    .product-left-card {
+        width: 310px;
+        height: 310px;
+    }
+}

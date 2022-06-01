@@ -1,0 +1,122 @@
+/** Dynamic Section Starts **/
+
+.dynamic-section {
+    max-width: 1920px;
+    margin: 0 auto;
+    height: 100vh;
+    max-height: 1500px;
+    background-image: url("../../img/section.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 82px;
+}
+
+.textanimation {
+    left: 0px;
+    height: 120px;
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.content_textanimation {
+    width: 100%;
+    padding-top: 20px;
+    margin: 0 auto;
+    font-size: 24px;
+    white-space: nowrap;
+    font-family: 'Poppins';
+    font-weight: 400;
+}
+
+
+.element_animation {
+    display: inline-block;
+    -webkit-animation: scrolling-left1 20s linear infinite;
+    animation: scrolling-left1 20s linear infinite;
+}
+
+
+.text_animation {
+    display: inline-block;
+    margin: 0;
+    color: #FFFFFF;
+}
+
+@keyframes scrolling-left1 {
+    0% {
+        transform: translateX(0%);
+        -webkit-transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+    }
+}
+
+@-webkit-keyframes scrolling-left1 {
+    0% {
+        -webkit-transform: translateX(0%);
+    }
+
+    100% {
+        -webkit-transform: translateX(-100%);
+    }
+}
+
+
+/** Dynamic Section Ends **/
+
+@media screen and (min-width:320px) and (max-width:768px) {
+    .dynamic-section{
+        height: 50vh;
+    }
+
+    .text_animation{
+        font-size: 50px;
+    }
+    
+    .textanimation{
+        height: 75px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .dynamic-section {
+        height: 50vh;
+    }
+
+    .partners-container {
+        padding: 0 20px !important;
+        overflow-x: scroll;
+    }
+
+    .parnters-card:not(:first-child) {
+        margin-left: 70px;
+    }
+
+    .partners-container::-webkit-scrollbar {
+        display: none;
+    }
+
+    .partners-container {
+        -ms-overflow-style: none;
+        /* IE and Edge */
+        scrollbar-width: none;
+        /* Firefox */
+    }
+}
+
+@media screen and (min-width:768px) and (min-height:768px) and (max-width:1024px) and (max-height:1024px) {
+    .parnters-card:not(:first-child) {
+        margin-left: 0px;
+    }
+}

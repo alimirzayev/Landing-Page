@@ -1,0 +1,48 @@
+/** Main Starts Here **/
+
+main {
+    max-width: 1920px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-left,
+.main-right {
+    width: 50%;
+    overflow: hidden;
+}
+
+.main-left img,
+.main-right img {
+    width: 100%;
+    transition: 0.3s;
+}
+
+.main-left img:hover,
+.main-right img:hover{
+    transform: scale(1.03);
+}
+
+/** Main Ends Here **/
+
+@media screen and (min-width:320px) and (max-width:768px) {
+    main{
+        height: 91vh;
+    }
+
+    .main-right{
+        display: none;
+    }
+
+    .main-left{
+        height: 100%;
+        width: 100%;
+    }
+
+    .main-left img{
+        height: 100%;
+        object-fit: cover;
+    }
+}
