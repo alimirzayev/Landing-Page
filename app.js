@@ -86,28 +86,28 @@ colors[0].addEventListener("click",function(){
 })
 
 colors[1].addEventListener("click",function(){
-  document.getElementById("card-1").src="https://www.freeiconspng.com/uploads/blue-old-couch-png-31.png";
-  document.getElementById("card-2").src="https://freepngimg.com/save/43829-sofa-bed-free-transparent-image-hq/480x480";
-  document.getElementById("card-3").src="https://www.pngkit.com/png/full/437-4372666_image-blue-sofa-transparent-background.png";
-  document.getElementById("card-4").src="https://homemakerfurniture.com/wp-content/uploads/2021/03/blue2-1.png";
+  document.getElementById("card-1").src="./assets/img/bluesofa.png";
+  document.getElementById("card-2").src="./assets/img/bluesofa.png";
+  document.getElementById("card-3").src="./assets/img/bluesofa.png";
+  document.getElementById("card-4").src="./assets/img/bluesofa.png";
 
   document.getElementById("card-5").src="https://freepngimg.com/save/43829-sofa-bed-free-transparent-image-hq/480x480";
 })
 
 colors[2].addEventListener("click",function(){
-  document.getElementById("card-1").src="https://cdn4.afydecor.com/Sofas/537/537.png";
-  document.getElementById("card-2").src="https://cdn4.afydecor.com/Sofas/537/537.png";
-  document.getElementById("card-3").src="https://cdn4.afydecor.com/Sofas/537/537.png";
-  document.getElementById("card-4").src="https://cdn4.afydecor.com/Sofas/537/537.png";
+  document.getElementById("card-1").src="./assets/img/skysofa.png";
+  document.getElementById("card-2").src="./assets/img/skysofa.png";
+  document.getElementById("card-3").src="./assets/img/skysofa.png";
+  document.getElementById("card-4").src="./assets/img/skysofa.png";
 
-  document.getElementById("card-5").src="https://cdn4.afydecor.com/Sofas/537/537.png";
+  document.getElementById("card-5").src="./assets/img/skysofa.png";
 })
 
 colors[3].addEventListener("click",function(){
-  document.getElementById("card-1").src="https://productimages.mybobs.com/fit-in/624x0/sp/20059887008/20059887008_hero_wide.jpg";
-  document.getElementById("card-2").src="https://productimages.mybobs.com/fit-in/624x0/sp/20059887008/20059887008_hero_wide.jpg";
-  document.getElementById("card-3").src="https://productimages.mybobs.com/fit-in/624x0/sp/20059887008/20059887008_hero_wide.jpg";
-  document.getElementById("card-4").src="https://productimages.mybobs.com/fit-in/624x0/sp/20059887008/20059887008_hero_wide.jpg";
+  document.getElementById("card-1").src="./assets/img/skysofa.png";
+  document.getElementById("card-2").src="./assets/img/skysofa.png";
+  document.getElementById("card-3").src="./assets/img/skysofa.png";
+  document.getElementById("card-4").src="./assets/img/skysofa.png";
 
-  document.getElementById("card-5").src="https://productimages.mybobs.com/fit-in/624x0/sp/20059887008/20059887008_hero_wide.jpg";
+  document.getElementById("card-5").src="./assets/img/skysofa.png";
 })
