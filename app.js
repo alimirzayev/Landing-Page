@@ -73,6 +73,8 @@ function check() {
 }
 
 
+//*! There isn't data api for that reason I am coding it manually
+
 var colors = document.getElementsByName("color");
 console.log(colors[0]);
 
