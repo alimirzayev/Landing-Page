@@ -1,3 +1,92 @@
+//*! There isn't data or api for that reason I created mock data
+
+const data = [
+  {
+    img: "./assets/img/sofa1.png",
+    bigImg: "./assets/img/bigsofa.png",
+    color: "green",
+  },
+  {
+    img: "./assets/img/bluesofa.png",
+    bigImg: "./assets/img/bluesofa.png",
+    color: "blue",
+  },
+  {
+    img: "./assets/img/skysofa.png",
+    bigImg: "./assets/img/skysofa.png",
+    color: "sky",
+  },
+  {
+    img: "./assets/img/graysofa.webp",
+    bigImg: "./assets/img/graysofa.webp",
+    color: "gray",
+  },
+];
+
+//** Rendering Products
+
+let containerLeft = document.getElementById("product-container-left");
+let containerRight = document.getElementById("product-container-right");
+
+window.onload = function () {
+  let products = data;
+  let i = 0;
+  products.map(function (product) {
+    i++;
+    containerLeft.innerHTML += `
+                <div class="product-left-card">
+                  <div class="product-left-card-img">
+                      <img id="card-${i}" src="./assets/img/sofa1.png" alt="">
+                  </div>
+
+                  <div class="product-tags-container">
+
+                      <div class="product-first-tag">
+                          <p>3 Seater sofa</p>
+                      </div>
+
+                      <div class="product-second-tag">
+                          <p>Desde 2500€</p>
+                      </div>
+
+                  </div>
+              </div>`;
+  });
+
+  containerRight.innerHTML = `
+                <div class="product-right-card">
+
+                    <div class="product-right-card-img">
+                        <img id="card-5" src="./assets/img/bigsofa.png" alt="">
+                    </div>
+
+                    <div class="product-tags-container">
+
+                        <div class="product-first-tag">
+                            <p>3 Seater sofa</p>
+                        </div>
+
+                        <div class="product-second-tag">
+                            <p>Desde 2500€</p>
+                        </div>
+
+                    </div>
+
+                </div>`;
+};
+
+function getColor(color) {
+  let chosen = data.find((e) => e.color === color);
+
+  document.getElementById("card-1").src = chosen.img;
+  document.getElementById("card-2").src = chosen.img;
+  document.getElementById("card-3").src = chosen.img;
+  document.getElementById("card-4").src = chosen.img;
+  document.getElementById("card-5").src = chosen.bigImg;
+}
+
+//** Opening Mobile Menu
+
 const nav = document.querySelector("#nav");
 const menu = document.querySelector("#menu");
 const viewport = document.querySelector(".viewport");
@@ -17,32 +106,16 @@ menuToggle.addEventListener("click", (e) => {
   document.body.classList.toggle("height");
 });
 
-nav.addEventListener("keydown", (e) => {
-
-  if (!isMenuOpen || e.ctrlKey || e.metaKey || e.altKey) {
-    return;
-  }
-
-  const menuLinks = menu.querySelectorAll(".nav__link");
-  if (e.keyCode === 9) {
-    if (e.shiftKey) {
-      if (document.activeElement === menuLinks[0]) {
-        menuToggle.focus();
-        e.preventDefault();
-      }
-    } else if (document.activeElement === menuToggle) {
-      menuLinks[0].focus();
-      e.preventDefault();
-    }
-  }
-});
+//** eMail Validation
 
 const email = document.querySelector("#email");
 const icon1 = document.querySelector(".icon1");
 const icon2 = document.querySelector(".icon2");
 const error = document.querySelector(".error-text");
 const btn = document.querySelector("button");
+
 let regExp = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
 function check() {
   if (email.value.match(regExp)) {
     document.getElementById("form-button").disabled = false;
@@ -71,45 +144,3 @@ function check() {
     btn.style.display = "none";
   }
 }
-
-
-//*! There isn't data api for that reason I am coding it manually
-
-var colors = document.getElementsByName("color");
-console.log(colors[0]);
-
-colors[0].addEventListener("click",function(){
-  document.getElementById("card-1").src="./assets/img/sofa1.png";
-  document.getElementById("card-2").src="./assets/img/sofa2.png";
-  document.getElementById("card-3").src="./assets/img/sofa3.png";
-  document.getElementById("card-4").src="./assets/img/sofa4.png";
-
-  document.getElementById("card-5").src="./assets/img/bigsofa.png";
-})
-
-colors[1].addEventListener("click",function(){
-  document.getElementById("card-1").src="./assets/img/bluesofa.png";
-  document.getElementById("card-2").src="./assets/img/bluesofa.png";
-  document.getElementById("card-3").src="./assets/img/bluesofa.png";
-  document.getElementById("card-4").src="./assets/img/bluesofa.png";
-
-  document.getElementById("card-5").src="https://freepngimg.com/save/43829-sofa-bed-free-transparent-image-hq/480x480";
-})
-
-colors[2].addEventListener("click",function(){
-  document.getElementById("card-1").src="./assets/img/skysofa.png";
-  document.getElementById("card-2").src="./assets/img/skysofa.png";
-  document.getElementById("card-3").src="./assets/img/skysofa.png";
-  document.getElementById("card-4").src="./assets/img/skysofa.png";
-
-  document.getElementById("card-5").src="./assets/img/skysofa.png";
-})
-
-colors[3].addEventListener("click",function(){
-  document.getElementById("card-1").src="./assets/img/graysofa.webp";
-  document.getElementById("card-2").src="./assets/img/graysofa.webp";
-  document.getElementById("card-3").src="./assets/img/graysofa.webp";
-  document.getElementById("card-4").src="./assets/img/graysofa.webp";
-
-  document.getElementById("card-5").src="./assets/img/graysofa.webp";
-})

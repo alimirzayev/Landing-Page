@@ -336,7 +336,7 @@
 
                 <div class="custom-radios">
                     <div>
-                        <input type="radio" id="color-1" name="color" value="color-1" checked>
+                        <input type="radio" class="radio" onClick="getColor(this.value)" id="color-1" name="color" value="green" checked>
                         <label for="color-1">
                             <span>
                                 <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg"
@@ -346,7 +346,7 @@
                     </div>
 
                     <div>
-                        <input type="radio" id="color-2" name="color" value="color-2">
+                        <input type="radio" class="radio" onClick="getColor(this.value)" id="color-2" name="color" value="blue">
                         <label for="color-2">
                             <span>
                                 <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg"
@@ -356,7 +356,7 @@
                     </div>
 
                     <div>
-                        <input type="radio" id="color-3" name="color" value="color-3">
+                        <input type="radio" class="radio" onClick="getColor(this.value)" id="color-3" name="color" value="sky">
                         <label for="color-3">
                             <span>
                                 <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg"
@@ -366,7 +366,7 @@
                     </div>
 
                     <div>
-                        <input type="radio" id="color-4" name="color" value="color-4">
+                        <input type="radio" class="radio" onClick="getColor(this.value)" id="color-4" name="color" value="gray">
                         <label for="color-4">
                             <span>
                                 <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg"
@@ -384,103 +384,11 @@
         </div>
 
         <div class="product-section-container">
-            <div class="product-container-left">
-
-                <div class="product-left-card">
-                    <div class="product-left-card-img">
-                        <img id="card-1" src="./assets/img/sofa1.png" alt="">
-                    </div>
-
-                    <div class="product-tags-container">
-
-                        <div class="product-first-tag">
-                            <p>3 Seater sofa</p>
-                        </div>
-
-                        <div class="product-second-tag">
-                            <p>Desde 2500€</p>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="product-left-card">
-                    <div class="product-left-card-img">
-                        <img id="card-2" src="./assets/img/sofa2.png" alt="">
-                    </div>
-
-                    <div class="product-tags-container">
-
-                        <div class="product-first-tag">
-                            <p>3 Seater sofa</p>
-                        </div>
-
-                        <div class="product-second-tag">
-                            <p>Desde 2500€</p>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="product-left-card">
-                    <div class="product-left-card-img">
-                        <img id="card-3" src="./assets/img/sofa3.png" alt="">
-                    </div>
-
-                    <div class="product-tags-container">
-
-                        <div class="product-first-tag">
-                            <p>3 Seater sofa</p>
-                        </div>
-
-                        <div class="product-second-tag">
-                            <p>Desde 2500€</p>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="product-left-card">
-                    <div class="product-left-card-img">
-                        <img id="card-4" src="./assets/img/sofa4.png" alt="">
-                    </div>
-
-                    <div class="product-tags-container">
-
-                        <div class="product-first-tag">
-                            <p>3 Seater sofa</p>
-                        </div>
-
-                        <div class="product-second-tag">
-                            <p>Desde 2500€</p>
-                        </div>
-
-                    </div>
-                </div>
+            <div class="product-container-left" id="product-container-left">
 
             </div>
 
-            <div class="product-container-right">
-
-                <div class="product-right-card">
-
-                    <div class="product-right-card-img">
-                        <img id="card-5" src="./assets/img/bigsofa.png" alt="">
-                    </div>
-
-                    <div class="product-tags-container">
-
-                        <div class="product-first-tag">
-                            <p>3 Seater sofa</p>
-                        </div>
-
-                        <div class="product-second-tag">
-                            <p>Desde 2500€</p>
-                        </div>
-
-                    </div>
-
-                </div>
+            <div class="product-container-right" id="product-container-right">
 
             </div>
         </div>
