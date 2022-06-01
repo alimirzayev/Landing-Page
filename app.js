@@ -106,10 +106,10 @@ colors[2].addEventListener("click",function(){
 })
 
 colors[3].addEventListener("click",function(){
-  document.getElementById("card-1").src="./assets/img/skysofa.png";
-  document.getElementById("card-2").src="./assets/img/skysofa.png";
-  document.getElementById("card-3").src="./assets/img/skysofa.png";
-  document.getElementById("card-4").src="./assets/img/skysofa.png";
+  document.getElementById("card-1").src="./assets/img/graysofa.webp";
+  document.getElementById("card-2").src="./assets/img/graysofa.webp";
+  document.getElementById("card-3").src="./assets/img/graysofa.webp";
+  document.getElementById("card-4").src="./assets/img/graysofa.webp";
 
-  document.getElementById("card-5").src="./assets/img/skysofa.png";
+  document.getElementById("card-5").src="./assets/img/graysofa.webp";
 })
