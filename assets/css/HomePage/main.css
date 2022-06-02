@@ -6,6 +6,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 .main-left,

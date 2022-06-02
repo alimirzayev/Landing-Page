@@ -1,5 +1,10 @@
 /** Features Starts Here **/
 
+:root{
+    --orange: #FF7144;
+    --box-shadow-color: #fbb19aa9;
+}
+
 .features-section {
     max-width: 1920px;
     margin: 67px auto 79px auto;
@@ -21,7 +26,7 @@
     border: none;
     outline: none;
     padding: 10px 20px;
-    background: #FF7144;
+    background: var(--orange);
     border: 2px solid transparent;
     border-radius: 27px;
     transition: 0.3s;
@@ -31,8 +36,8 @@
 .product-starting-btn button:hover,
 .footer-first form button:hover{
     background: transparent;
-    border: 2px solid #FF7144;
-    color: #FF7144;
+    border: 2px solid var(--orange);
+    color: var(--orange);
 }
 
 .features-right {
@@ -53,7 +58,7 @@
 }
 
 .features-card:hover{
-    box-shadow: 0px 0px 30px 1px #fbb19aa9;
+    box-shadow: 0px 0px 30px 1px var(--box-shadow-color);
 }
 
 .features-card-img {

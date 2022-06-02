@@ -1,6 +1,6 @@
 /** Header Starts Here **/
 :root {
-    --splash-bg-color: #368887;
+    --bg-color: #368887;
 }
 
 header {
@@ -216,7 +216,7 @@ header {
     display: block;
     position: absolute;
     border-radius: 50%;
-    background-color: var(--splash-bg-color);
+    background-color: var(--bg-color);
     width: 284vmax;
     height: 284vmax;
     top: -142vmax;
@@ -277,7 +277,7 @@ header {
     margin: 0 auto;
     position: relative;
     overflow: hidden;
-    background-color: #368887;
+    background-color: var(--bg-color);
 }
 
 .header-mobile-logo{

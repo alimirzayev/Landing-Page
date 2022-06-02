@@ -25,18 +25,24 @@ const data = [
 
 //** Rendering Products
 
-let containerLeft = document.getElementById("product-container-left");
-let containerRight = document.getElementById("product-container-right");
-
 window.onload = function () {
+  let containerLeft = document.getElementById("product-container-left");
+  let containerRight = document.getElementById("product-container-right");
+  let radios = document.getElementsByClassName("radio");
+  let firstRadio = radios[0].value;
+
   let products = data;
   let i = 0;
-  products.map(function (product) {
+
+  let firstChosen = data.find((e) => e.color === firstRadio);
+
+  products.map(function () {
     i++;
+
     containerLeft.innerHTML += `
                 <div class="product-left-card">
                   <div class="product-left-card-img">
-                      <img id="card-${i}" src="./assets/img/sofa1.png" alt="">
+                      <img id="card-${i}" src=${firstChosen.img} alt="">
                   </div>
 
                   <div class="product-tags-container">
@@ -53,11 +59,11 @@ window.onload = function () {
               </div>`;
   });
 
-  containerRight.innerHTML = `
+    containerRight.innerHTML = `
                 <div class="product-right-card">
 
                     <div class="product-right-card-img">
-                        <img id="card-5" src="./assets/img/bigsofa.png" alt="">
+                        <img id="card-5" src=${firstChosen.bigImg} alt="">
                     </div>
 
                     <div class="product-tags-container">
@@ -72,7 +78,7 @@ window.onload = function () {
 
                     </div>
 
-                </div>`;
+              </div>`;
 };
 
 function getColor(color) {

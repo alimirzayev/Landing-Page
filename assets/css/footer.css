@@ -1,4 +1,8 @@
 /** Footer Section Starts **/
+:root {
+    --error-color: #e74c3c;
+    --success-color: #27ae60;
+}
 
 .footer-top {
     max-width: 1920px;
@@ -65,19 +69,19 @@
 }
 
 .field .icons span.icon1 {
-    color: #e74c3c;
-    border-color: #e74c3c;
+    color: var(--error-color);
+    border-color: var(--error-color);
 }
 
 .field .icons span.icon2 {
-    color: #27ae60;
-    border-color: #27ae60;
+    color: var(--success-color);
+    border-color: var(--success-color);
 }
 
 form .error-text {
     position: relative;
     margin: 20px 0 0 0;
-    background: #e74c3c;
+    background: var(--error-color);
     color: #fceae8;
     font-size: 18px;
     padding: 8px;
@@ -95,7 +99,7 @@ form .error-text:before {
     content: '';
     height: 15px;
     width: 15px;
-    background: #e74c3c;
+    background: var(--error-color);
     right: 20px;
     top: -7px;
     transform: rotate(45deg);
